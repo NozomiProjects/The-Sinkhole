@@ -5,16 +5,30 @@ using UnityEngine;
 public class BlackWidowStateMachine : MonoBehaviour
 {
     // Start is called before the first frame update
-    private IState BWScreamStatus;
-    private IState actualState;
+    public State BWManifestationStatus;
+    public State BWScreamStatus;
+
+    public State InitialState;
+    private State actualState;
 
 
-    /* void Start()
+    void Start()
     {
-        ChangeState(new BWScreamStatus());
-    } */
+        actualState = InitialState;
+        actualState.EnterState();
+    }
 
-    // Update is called once per frame
+    public void ChangeState(State newState)
+    {
+        if (actualState != null)
+        {
+            actualState.ExitState();
+        }
+
+        actualState = newState;
+        actualState.EnterState();
+    }
+
     void Update()
     {
         if (actualState != null)
@@ -22,12 +36,4 @@ public class BlackWidowStateMachine : MonoBehaviour
             actualState.UpdateState();
         }
     }
-
-   /*  public void ChangeStatus(IState newState){
-        if(actualState != null){
-            actualState.ExitState();
-        }
-        actualState = newState;
-        actualState.EnterState();
-    } */
 }
