@@ -7,6 +7,7 @@ public class BlackWidowStateMachine : MonoBehaviour
     // Start is called before the first frame update
     public State BWManifestationStatus;
     public State BWScreamStatus;
+    public State BWSeductionStatus;
 
     public State InitialState;
     private State actualState;
@@ -14,7 +15,7 @@ public class BlackWidowStateMachine : MonoBehaviour
 
     void Start()
     {
-        if (BWManifestationStatus != null && BWScreamStatus != null && InitialState != null)
+        if (BWManifestationStatus != null && BWScreamStatus != null && BWSeductionStatus != null && InitialState != null)
             {
                 actualState = InitialState;
                 actualState.EnterState();
