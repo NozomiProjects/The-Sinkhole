@@ -14,8 +14,15 @@ public class BlackWidowStateMachine : MonoBehaviour
 
     void Start()
     {
-        actualState = InitialState;
-        actualState.EnterState();
+        if (BWManifestationStatus != null && BWScreamStatus != null && InitialState != null)
+            {
+                actualState = InitialState;
+                actualState.EnterState();
+            }
+        else
+        {
+            Debug.LogError("Alguna referencia no esta asignada en el Inspector.");
+        }
     }
 
     public void ChangeState(State newState)

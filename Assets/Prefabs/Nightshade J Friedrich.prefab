@@ -1478,6 +1478,7 @@ GameObject:
   - component: {fileID: 2511225496727256755}
   - component: {fileID: 6164607842879611563}
   - component: {fileID: 7728896562299017294}
+  - component: {fileID: 5077119525930014675}
   m_Layer: 0
   m_Name: Nightshade J Friedrich
   m_TagString: Untagged
@@ -1622,8 +1623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BWManifestationStatus: {fileID: 7728896562299017294}
-  BWScreamStatus: {fileID: 0}
-  InitialState: {fileID: 0}
+  BWScreamStatus: {fileID: 5077119525930014675}
+  InitialState: {fileID: 7728896562299017294}
 --- !u!114 &7728896562299017294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,6 +1644,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &5077119525930014675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288381515105669133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4761fbd091b7ea04cb85090fc8044e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6456642348911030042
 GameObject:
   m_ObjectHideFlags: 0
