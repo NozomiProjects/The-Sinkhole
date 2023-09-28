@@ -15,7 +15,9 @@ MonoBehaviour:
   Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638314413291135526
+
+  lastModified: 638312669564866605
+
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -35,7 +37,9 @@ MonoBehaviour:
   Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638314413291235605
+
+  lastModified: 638312669564876620
+
   FileSizes:
   - Name: Desktop
     Value: 712
@@ -61,5 +65,7 @@ MonoBehaviour:
   - {fileID: -2712702767553230525}
   StringsBanks:
   - {fileID: -284076699634096705}
-  cacheTime: 638314413291235605
+
+  cacheTime: 638312669564876620
+
   cacheVersion: 131605
