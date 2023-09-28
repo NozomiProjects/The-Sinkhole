@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class State : MonoBehaviour, IState
 {
-    protected BlackWidowStateMachine blackWidowStateMachine;
+    //protected BlackWidowStateMachine blackWidowStateMachine;
 
     protected virtual void Start()
     {
-        blackWidowStateMachine = GetComponent<BlackWidowStateMachine>();
+        //blackWidowStateMachine = GetComponent<BlackWidowStateMachine>();
     }
 
     public virtual void EnterState()
