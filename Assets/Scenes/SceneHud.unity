@@ -1362,7 +1362,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2260,7 +2260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 547, y: 299}
+  m_AnchoredPosition: {x: -22, y: 286}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &428392584
@@ -2283,11 +2283,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mamani Dario\r\n\n\nRamos Evelyn\r\n\n\nRodriguez Cecilia Aylen\r\n\n\n\n\n\nFlores
-    Elian, Aracena Luciano\n\nRamos Evelyn, Flores Elian, Aracena Luciano \r\n\n\nFlores
-    Gabriel \r\n\n\n\nVargas Marcelo\r\n\nRodriguez Cecilia Aylen\r\n\n\nFlores Juan
-    Gabriel, Vargas Marcelo,Carrasco Ezequiel\r\n\n\nCarrasco Ezequiel\r\n\n\nAparicio
-    Jorge\r\n"
+  m_text: "Mamani Dario\n\r\nRamos Evelyn\n\r\nRodriguez Cecilia Aylen\n\r\nFlores
+    Elian, Aracena Luciano\n\nRamos Evelyn, Flores Elian, Aracena Luciano \r\n\nFlores
+    Gabriel \r\n\nVargas Marcelo\r\n\nRodriguez Cecilia Aylen\r\n\nFlores Juan Gabriel,
+    Vargas Marcelo,Carrasco \n\nEzequiel\n\r\nCarrasco Ezequiel\r\n\nAparicio Jorge\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2350,7 +2349,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -691.53827}
+  m_margin: {x: 0, y: -9.065645, z: -73.370094, w: -304.3743}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2451,7 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2459,7 +2458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 04b54f5ca5ac2f44ebec1740b9e5e4d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3454,7 +3453,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1396734418}
   m_FillRect: {fileID: 230662546}
   m_HandleRect: {fileID: 1396734417}
-  m_Direction: 0
+  m_Direction: 1
   m_MinValue: 0
   m_MaxValue: 0.9
   m_WholeNumbers: 0
@@ -5364,9 +5363,9 @@ RectTransform:
   m_Father: {fileID: 1922336648}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 892, y: -513.3}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -68, y: 26.700012}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1291471649
@@ -5722,7 +5721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1375778816
@@ -5882,7 +5881,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7230,7 +7229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -594, y: 296}
+  m_AnchoredPosition: {x: -619, y: 262}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626614847
@@ -7253,10 +7252,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Director de proyecto \n\n\nProductor/a \n\n\nDise\xF1ador/a de videojuegos
-    \n\n\nDise\xF1ador/a de niveles \n\n\nProgramador/a \n\n\nEscritor/a de historia
-    \n\n\nArtista gr\xE1fico \n\n\nAnimador/a\n\n\nDise\xF1ador/a de sonido  \n\n\nTester
-    \n\n\nMarketing \n\n"
+  m_text: "Director de proyecto\n \nProductor/a\n \nDise\xF1ador/a de videojuegos\n
+    \nDise\xF1ador/a de niveles \n\nProgramador/a\n \nEscritor/a de historia\n \nArtista
+    gr\xE1fico\n \nAnimador/a\n\nDise\xF1ador/a de sonido\n  \nTester\n \nMarketing "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7319,7 +7317,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 8.803169, y: -19.51394, z: 0, w: -440.88824}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
