@@ -5,55 +5,45 @@ using UnityEngine;
 
 public class BWSeductionStatus : MonoBehaviour
 {
-    public GameObject modelPrefab; //Modelo original
-    public GameObject seductionModelPrefab; //Modelo seduction
-    private GameObject actualModel; //Modelo actual
-    private bool isChangingModel = false;
-    private float modelChangeTimer = 0f;
-
-    public event Action SeductionStarted; // Evento que notifica el inicio de Seduction
+    public Transform player;
+    public float seductionStartDistance = 15.0f;
+    //public float seductionStopDistance = 5.0f;
+    public float disappearDistance = 5.0f; //distancia de desaparicion
     
-    // Logica de inicializacion
-    void Start()
+    //cuadno el jugador se acerque deja de hacer animaxcion y desaparece
+    private Animator animator;
+    private bool isSeducing = false;
+
+    private void Start()
     {
-        actualModel = Instantiate(modelPrefab, transform.position, transform.rotation); //Instancio modelo original
-        actualModel.transform.parent = transform; //El modelo actual es hijo del objeto (BW) que contiene este script
+        animator = GetComponent<Animator>();
     }
 
-    // Logica de entrada del estado
-    public void StartSeduction()
+    private void Update()
     {
-        isChangingModel = false;
-        modelChangeTimer = 0f; // Reiniciar el temporizador
-    }
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-    // Logica de actualizacion del estado
-    public void UpdateSeduction()
-    {
-        // Verifica si se debe cambiar de modelo
-        if (!isChangingModel){
-            modelChangeTimer += Time.deltaTime; // Incrementa el temporizador
-
-            // Si han transcurrido 3 segundos, cambia al modelo
-            if (modelChangeTimer >= 3f){
-                ChangeToSeductionModel(); // Cambia al modelo de seduccion
-                isChangingModel = true; // Establece isChangingModel como verdadero para evitar cambios
+        if (distanceToPlayer <= seductionStartDistance)
+        {
+            if (!isSeducing)
+            {
+                Debug.Log("Iniciando anim de sedution");
+                GetComponent<EnemyAnimator>().StartSeductionAnimation();
+                isSeducing = true;
+            }
+            // Verifica si el jugador esta dentro de la distancia de desaparicion
+            if (distanceToPlayer <= disappearDistance)
+            {
+                // Si el jugador esta dentro de la distancia de desaparicion, desactiva el objeto de BlackWidow.
+                gameObject.SetActive(false);
             }
         }
-
-    }
-
-    // Metodo para cambiar al modelo de seduccion
-    public void ChangeToSeductionModel()
-    {
-        Destroy(actualModel); // Destruye el modelo actual
-
-        // Instancia el modelo de seduccion en lugar del original
-        actualModel = Instantiate(seductionModelPrefab, transform.position, transform.rotation);
-        actualModel.transform.parent = transform;
-
-        // Notificar que Seduction ha comenzado
-        SeductionStarted?.Invoke();
+        /* else if (distanceToPlayer > seductionStopDistance && isSeducing)
+        {
+            Debug.Log("Deteniendo anim de seduction");
+            GetComponent<SeductionAnimator>().StopSeductionAnimation();
+            isSeducing = false;
+        } */
     }
 
 }

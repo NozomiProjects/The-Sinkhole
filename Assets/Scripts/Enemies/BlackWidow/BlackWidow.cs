@@ -5,24 +5,19 @@ using UnityEngine;
 public class BlackWidow : MonoBehaviour
 {
     public BWManifestationStatus bwManifestationStatus;
-    public BWSeductionStatus bwSeductionStatus;
     public GameObject zone1;
-    public GameObject zone2;
     private bool isInZone1 = false;
-    private bool isInZone2 = false;
+
     void Start()
     {
-        
         // Inicializa atributos especificos de BlackWidow si es necesario
         bwManifestationStatus = GetComponent<BWManifestationStatus>();
-        bwSeductionStatus = GetComponent<BWSeductionStatus>();
         // Verifica las zonas y activa el comportamiento
         CheckZoneAndActivateScript();
     }
     private void CheckZoneAndActivateScript()
     {
         bool activateManifestation = IsInZone("Zone1");
-        bool activateSeduction = IsInZone("Zone2");
         if (activateManifestation)
         {
             // BlackWidow esta en la Zona1
@@ -35,18 +30,7 @@ public class BlackWidow : MonoBehaviour
             isInZone1 = false;
             
         }
-        if (activateSeduction)
-        {
-            // BlackWidow esta en la Zona1
-            isInZone2 = true;
-            bwSeductionStatus.StartSeduction();
-        }
-        else
-        {
-            // BlackWidow no esta en la Zona1
-            isInZone2 = false;
-            
-        }
+
     }
 
     private bool IsInZone(string zoneTag)
@@ -70,15 +54,7 @@ public class BlackWidow : MonoBehaviour
             bwManifestationStatus.StartManifestation();
         }
     }
-    
-    // Metodo para activar el comportamiento de SeductionStatus
-    public void StartSeduction()
-    {
-        if (bwSeductionStatus != null && isInZone2)
-        {
-            bwSeductionStatus.StartSeduction();
-        }
-    }
+
     private void OnTriggerEnter(Collider other)
     {
         // Detecta si entra en una zona
@@ -88,10 +64,10 @@ public class BlackWidow : MonoBehaviour
             CheckZoneAndActivateScript();
             
         }
-        else if (other.CompareTag("Zone2"))
+        else 
         {
-            isInZone2 = true;
-            CheckZoneAndActivateScript();
+            isInZone1 = false;
+
         }
     
     }
@@ -102,10 +78,6 @@ public class BlackWidow : MonoBehaviour
         if (other.CompareTag("Zone1"))
         {
             isInZone1 = false;
-        }
-        else if (other.CompareTag("Zone2"))
-        {
-            isInZone2 = false;
         }
       
     }
