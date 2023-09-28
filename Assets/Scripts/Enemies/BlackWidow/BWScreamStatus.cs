@@ -4,20 +4,42 @@ using UnityEngine;
 
 public class BWScreamStatus : State
 {
-    
+    //cuando el personaje esta a una distancia de 10f 
+    //la bruja corre hacia el por 2 segundos y desaparece
+    public Transform player;
+    public float startMoveDistance = 10.0f;
+    public float moveSpeed = 18.0f;
+    public float moveDuration = 0.3f;
 
-    public override void EnterState()
+    private void Update()
     {
-        Debug.Log("Viuda entra en estado Scream");
-    }
-    public override void UpdateState()
-    {
-        // Logica de actualizacion del estado Scream
-        // Esto se ejecutara en cada fotograma mientras este en este estado
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= startMoveDistance)
+        {
+           StartCoroutine(MoveAndDisappear());
+        }
     }
 
-    public override void ExitState()
+    private IEnumerator MoveAndDisappear()
+{
+    // Guarda la pos inicial de la bruja
+    Vector3 initialPosition = transform.position;
+
+    // Calcula la pos final hacia adelante 
+    Vector3 targetPosition = transform.position + transform.forward * moveSpeed * moveDuration;
+
+    // Inicia el movimiento hacia adelante
+    float startTime = Time.time;
+    while (Time.time - startTime < moveDuration)
     {
-        Debug.Log("Viuda sale del estado Scream.");
+        // Calcula la posicion intermedia durante el movimiento
+        float t = (Time.time - startTime) / moveDuration;
+        transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
+        yield return null;
     }
+
+    // Desactiva el objeto de la bruja desp del mov
+    gameObject.SetActive(false);
+}
 }
