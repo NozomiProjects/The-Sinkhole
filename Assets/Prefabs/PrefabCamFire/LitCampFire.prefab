@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4266812924774574974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2702349148151486607}
+  m_Layer: 0
+  m_Name: LitCampFire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2702349148151486607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266812924774574974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.046, y: 0.094, z: -0.0413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3458036387085062494}
+  - {fileID: 2206493738980460582}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1932992002364821642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2702349148151486607}
+    m_Modifications:
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.046
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.046299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225245587984586572, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+      propertyPath: m_Name
+      value: CampFireOn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+--- !u!4 &3458036387085062494 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3832057756084650452, guid: 8f7885df47c5f1a4cbcf00ae7b761808, type: 3}
+  m_PrefabInstance: {fileID: 1932992002364821642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4949822275508379104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2702349148151486607}
+    m_Modifications:
+    - target: {fileID: 93427326461568402, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_Name
+      value: CampFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+--- !u!4 &2206493738980460582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6498209923530479046, guid: fded1376ff7f20d46acaac02b796138c, type: 3}
+  m_PrefabInstance: {fileID: 4949822275508379104}
+  m_PrefabAsset: {fileID: 0}
