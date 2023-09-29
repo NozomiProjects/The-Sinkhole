@@ -11,6 +11,7 @@ public class inventoryUIInteraction : MonoBehaviour, IPointerClickHandler, IPoin
 
     public Transform draggedItemParent;
     public Transform draggedItem;
+    public CordureSystem cordure;
 
   
     public Light flashlight;
@@ -86,7 +87,7 @@ public class inventoryUIInteraction : MonoBehaviour, IPointerClickHandler, IPoin
                     
                     break;
                 case 2:
-                   
+                    
                     break;
             }
                         

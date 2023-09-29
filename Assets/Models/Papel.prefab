@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2960481673356291719
+--- !u!1 &5869206944046742626
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1285754719851209553}
-  - component: {fileID: 7945490450412200916}
-  - component: {fileID: 2041984414285266617}
-  - component: {fileID: 6086371201376754737}
-  - component: {fileID: 2371530316255936647}
-  - component: {fileID: 553420434438071239}
+  - component: {fileID: 3111423688934045898}
+  - component: {fileID: 9147938249096946547}
+  - component: {fileID: 6064518252112349972}
+  - component: {fileID: 5269965709285976381}
+  - component: {fileID: 5160880906280117240}
+  - component: {fileID: 7646582123411129580}
   m_Layer: 6
-  m_Name: Bateria
+  m_Name: Papel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1285754719851209553
+--- !u!4 &3111423688934045898
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960481673356291719}
+  m_GameObject: {fileID: 5869206944046742626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6, y: 2.6, z: -1.26}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 395.58, y: 66.8564, z: -29.3959}
+  m_LocalScale: {x: 0.5599856, y: -0.0072, z: 0.4118684}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7945490450412200916
+--- !u!33 &9147938249096946547
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960481673356291719}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2041984414285266617
+  m_GameObject: {fileID: 5869206944046742626}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6064518252112349972
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960481673356291719}
+  m_GameObject: {fileID: 5869206944046742626}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6086371201376754737
-CapsuleCollider:
+--- !u!65 &5269965709285976381
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960481673356291719}
+  m_GameObject: {fileID: 5869206944046742626}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -104,18 +104,16 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2371530316255936647
+--- !u!54 &5160880906280117240
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960481673356291719}
+  m_GameObject: {fileID: 5869206944046742626}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -136,18 +134,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &553420434438071239
+--- !u!114 &7646582123411129580
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960481673356291719}
+  m_GameObject: {fileID: 5869206944046742626}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99bd8d0beb5654c49b2d5b0d47cda816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemStats: {fileID: 11400000, guid: 8fb33d3efae599240a5188c1dfcfbf27, type: 2}
+  itemStats: {fileID: 11400000, guid: b521eab26ebf3a541bb7851ffa912022, type: 2}
   amount: 1
-  description: "Una bater\xEDa\n"
+  description: 
