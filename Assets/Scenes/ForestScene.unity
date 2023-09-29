@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 965749051}
-  m_IndirectSpecularColor: {r: 0.0026122758, g: 0.009597543, b: 0.027482355, a: 1}
+  m_IndirectSpecularColor: {r: 0.0025996738, g: 0.009520172, b: 0.02718933, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -330,6 +330,7 @@ MonoBehaviour:
   startMoveDistance: 30
   moveSpeed: 35
   moveDuration: 0.8
+  cordureSystem: {fileID: 708521340}
 --- !u!136 &5953394
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5322,6 +5323,7 @@ MonoBehaviour:
   startMoveDistance: 30
   moveSpeed: 35
   moveDuration: 0.8
+  cordureSystem: {fileID: 708521340}
 --- !u!136 &547272307
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6736,6 +6738,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529851815dd71da48a62063ad05b3d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cordureStatus: {fileID: 304367707}
+  cordureActual: 1000
+  cordureMax: 1000
 --- !u!1001 &720697312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16848,7 +16853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4801827521424803622, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 391.3
+      value: 707.6
       objectReference: {fileID: 0}
     - target: {fileID: 4801827521424803622, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16856,7 +16861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4801827521424803622, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.2
+      value: 206
       objectReference: {fileID: 0}
     - target: {fileID: 4801827521424803622, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19182,6 +19187,7 @@ MonoBehaviour:
   startMoveDistance: 30
   moveSpeed: 35
   moveDuration: 0.8
+  cordureSystem: {fileID: 708521340}
 --- !u!136 &1446853038
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20115,6 +20121,7 @@ MonoBehaviour:
   startMoveDistance: 30
   moveSpeed: 35
   moveDuration: 0.8
+  cordureSystem: {fileID: 708521340}
 --- !u!136 &1530971617
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25191,6 +25198,7 @@ MonoBehaviour:
   startMoveDistance: 30
   moveSpeed: 35
   moveDuration: 0.8
+  cordureSystem: {fileID: 708521340}
 --- !u!136 &2091348417
 CapsuleCollider:
   m_ObjectHideFlags: 0

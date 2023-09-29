@@ -11,6 +11,7 @@ public class BWScreamStatus : MonoBehaviour
     public float moveSpeed = 35.0f;
     public float moveDuration = 0.8f;
 
+    [SerializeField] private CordureSystem cordureSystem;
     private EnemyAnimator enemyAnimator;
 
     private void Start()
@@ -23,30 +24,31 @@ public class BWScreamStatus : MonoBehaviour
 
         if (distanceToPlayer <= startMoveDistance)
         {
-           StartCoroutine(MoveAndDisappear());
+            StartCoroutine(MoveAndDisappear());
+            cordureSystem.LessCordure();
         }
     }
 
     private IEnumerator MoveAndDisappear()
-{   
-    enemyAnimator.StartScreamAnimation();
-    // Guarda la pos inicial de la bruja
-    Vector3 initialPosition = transform.position;
-
-    // Calcula la pos final hacia adelante 
-    Vector3 targetPosition = transform.position + transform.forward * moveSpeed * moveDuration;
-
-    // Inicia el movimiento hacia adelante
-    float startTime = Time.time;
-    while (Time.time - startTime < moveDuration)
     {
-        // Calcula la posicion intermedia durante el movimiento
-        float t = (Time.time - startTime) / moveDuration;
-        transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
-        yield return null;
-    }
+        enemyAnimator.StartScreamAnimation();
+        // Guarda la pos inicial de la bruja
+        Vector3 initialPosition = transform.position;
 
-    // Desactiva el objeto de la bruja desp del mov
-    gameObject.SetActive(false);
-}
+        // Calcula la pos final hacia adelante 
+        Vector3 targetPosition = transform.position + transform.forward * moveSpeed * moveDuration;
+
+        // Inicia el movimiento hacia adelante
+        float startTime = Time.time;
+        while (Time.time - startTime < moveDuration)
+        {
+            // Calcula la posicion intermedia durante el movimiento
+            float t = (Time.time - startTime) / moveDuration;
+            transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
+            yield return null;
+        }
+
+        // Desactiva el objeto de la bruja desp del mov
+        gameObject.SetActive(false);
+    }
 }
