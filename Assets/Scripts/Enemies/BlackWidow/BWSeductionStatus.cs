@@ -8,7 +8,7 @@ public class BWSeductionStatus : MonoBehaviour
     public Transform player;
     public float cryStartDistance = 35.0f;
     //public float cryStopDistance = 5.0f;
-    public float disappearDistance = 20.0f; //distancia de desaparicion
+    public float disappearDistance = 5.0f; //distancia de desaparicion
     
     //cuadno el jugador se acerque deja de hacer animaxcion y desaparece
     private Animator animator;
