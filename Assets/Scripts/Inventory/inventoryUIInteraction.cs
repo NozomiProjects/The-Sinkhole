@@ -62,6 +62,7 @@ public class inventoryUIInteraction : MonoBehaviour, IPointerClickHandler, IPoin
         {
             if (eventData.pointerClick.GetComponent<slot>().itemInSlot == null || clickedItemUI.activeInHierarchy)
                 return;
+            
             clickedItemUI.transform.position = Input.mousePosition + new Vector3(clickedItemUI.GetComponent<RectTransform>().rect.width * 1.5f / 2 + 1, -(clickedItemUI.GetComponent<RectTransform>().rect.height * 1.5f / 2 - 1), 0);
             clickedItemUI.GetComponent<clickedItem>().clickedSlot = eventData.pointerClick.GetComponent<slot>();
             clickedItemUI.SetActive(true);
@@ -87,7 +88,13 @@ public class inventoryUIInteraction : MonoBehaviour, IPointerClickHandler, IPoin
                     
                     break;
                 case 2:
-                    
+                    break;
+                case 3:
+                    cordure.cordureActual = 1000;
+                    eventData.pointerClick.GetComponent<slot>().itemInSlot = null;
+                    eventData.pointerClick.GetComponent<slot>().amountInSlot = 0;
+                    eventData.pointerClick.GetComponent<slot>().SetStats();
+                    eventData.pointerClick.GetComponent<slot>().description = null;
                     break;
             }
                         
