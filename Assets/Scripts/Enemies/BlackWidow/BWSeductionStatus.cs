@@ -41,7 +41,7 @@ public class BWSeductionStatus : MonoBehaviour
         /* else if (distanceToPlayer > cryStopDistance && isSeducing)
         {
             Debug.Log("Deteniendo anim de cryn");
-            GetComponent<CryAnimator>().StopcryAnimation();
+            GetComponent<EnemyAnimator>().StopCryAnimation();
             isSeducing = false;
         } */
     }
