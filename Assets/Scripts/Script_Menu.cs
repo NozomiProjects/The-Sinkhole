@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Script_Menu : MonoBehaviour
 {
-     public void EmpezarNivel (string Nivel1)
+     public void EmpezarNivel ()
      {
-        SceneManager.LoadScene(Nivel1);
+        SceneManager.LoadScene("ForestScene");
      }
 
     public void Salir()
