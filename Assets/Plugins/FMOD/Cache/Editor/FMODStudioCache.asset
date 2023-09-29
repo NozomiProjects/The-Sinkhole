@@ -1,26 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8769303642733264532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638315401026018580
-  FileSizes:
-  - Name: Desktop
-    Value: 712
-  Exists: 1
---- !u!114 &-7488691765485357711
+--- !u!114 &-2909293396647372852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35,10 +15,10 @@ MonoBehaviour:
   Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638315401026008568
+  lastModified: 638315923686194971
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1584704
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -53,14 +33,89 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -8769303642733264532}
-  - {fileID: -7488691765485357711}
-  EditorEvents: []
+  - {fileID: 7268538553746899785}
+  - {fileID: -2909293396647372852}
+  EditorEvents:
+  - {fileID: 3687819227760483542}
+  - {fileID: 1080167582191777121}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7488691765485357711}
+  - {fileID: -2909293396647372852}
   StringsBanks:
-
-  - {fileID: -8769303642733264532}
-  cacheTime: 638315401026018580
+  - {fileID: 7268538553746899785}
+  cacheTime: 638315923686214907
   cacheVersion: 131605
+--- !u!114 &1080167582191777121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/mainMenuOst
+  m_EditorClassIdentifier: 
+  Path: event:/mainMenuOst
+  Guid:
+    Data1: 150109771
+    Data2: 1128888371
+    Data3: 1712525954
+    Data4: 932417470
+  Banks:
+  - {fileID: -2909293396647372852}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 107284
+--- !u!114 &3687819227760483542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/introOst
+  m_EditorClassIdentifier: 
+  Path: event:/introOst
+  Guid:
+    Data1: 1372905127
+    Data2: 1249101217
+    Data3: 392997011
+    Data4: -1558515785
+  Banks:
+  - {fileID: -2909293396647372852}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7268538553746899785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638315923686214907
+  FileSizes:
+  - Name: Desktop
+    Value: 812
+  Exists: 1
