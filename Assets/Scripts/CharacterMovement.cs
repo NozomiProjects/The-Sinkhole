@@ -16,8 +16,11 @@ public class CharacterMovement : MonoBehaviour
     public float speedCouch;
 
     //variables de Fmod necesarios para el sonido
-    public FMODUnity.EventReference m_EventPath;
-    private FMOD.Studio.EventInstance walkSoundInstance;
+    public FMODUnity.EventReference walkSoundEvent; // Evento de sonido de caminata
+    public FMODUnity.EventReference jumpSoundEvent; // Evento de sonido de salto
+
+    private FMOD.Studio.EventInstance walkSoundInstance; // Instancia de sonido de caminata
+    private FMOD.Studio.EventInstance jumpSoundInstance; // Instancia de sonido de salto
     private bool isWalking = false; // Variable para controlar el estado de caminata
 
 
@@ -26,31 +29,40 @@ public class CharacterMovement : MonoBehaviour
     {
         speed0 = speedMov; //Inicializamos la velocidad del movimiento
         speedCouch = speedMov * 0.5f; //Inicializamos la velocidad del movimiento de cuándo esté agachado
+
+        // Inicializa la instancia de sonido de salto
+        jumpSoundInstance = FMODUnity.RuntimeManager.CreateInstance(jumpSoundEvent);
     }
 
     void Update()
     {
         Movement();
 
-        // Verifica si el personaje está caminando
         if (characterInput.x != 0 || characterInput.y != 0)
         {
             if (!isWalking)
             {
-                // Si no está caminando, crea una nueva instancia y comienza la reproducción.
-                walkSoundInstance = FMODUnity.RuntimeManager.CreateInstance(m_EventPath);
+                walkSoundInstance = FMODUnity.RuntimeManager.CreateInstance(walkSoundEvent);
                 walkSoundInstance.start();
-                isWalking = true; // Actualiza el estado de caminata
+                isWalking = true;
             }
         }
         else
         {
             if (isWalking)
             {
-                // Si estaba caminando, detiene el sonido y actualiza el estado de caminata
                 walkSoundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 isWalking = false;
             }
+        }
+
+        // Verifica si el jugador presiona el botón de salto (barra espaciadora)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Llama al método de salto en el script CharacterJump
+            characterInput.characterJump.Jump();
+            // Reproduce el sonido de salto
+            jumpSoundInstance.start();
         }
     }
 
