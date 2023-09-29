@@ -18314,6 +18314,10 @@ PrefabInstance:
       value: event:/playerWalk
       objectReference: {fileID: 0}
     - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
+      propertyPath: jumpSoundEvent.Path
+      value: event:/playerJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: walkSoundEvent.Path
       value: event:/playerWalk
       objectReference: {fileID: 0}
@@ -18332,6 +18336,22 @@ PrefabInstance:
     - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: m_EventPath.Guid.Data4
       value: -640720719
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
+      propertyPath: jumpSoundEvent.Guid.Data1
+      value: 855319165
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
+      propertyPath: jumpSoundEvent.Guid.Data2
+      value: 1223173126
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
+      propertyPath: jumpSoundEvent.Guid.Data3
+      value: 1628392082
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
+      propertyPath: jumpSoundEvent.Guid.Data4
+      value: 1856073619
       objectReference: {fileID: 0}
     - target: {fileID: 8512634667002771085, guid: f170840cd10a2ba419c27d35845bab8e, type: 3}
       propertyPath: walkSoundEvent.Guid.Data1
