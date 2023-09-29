@@ -10,7 +10,7 @@ public class BWManifestationStatus : MonoBehaviour
     //public GameObject BWPrefab;
     private GameObject BWInstance;
 
-    public float manifestationDuration = 3f; //Duracion de la manifestacion
+    public float manifestationDuration = 2f; //Duracion de la manifestacion
     private float manifestationTimer = 1f; //Temporizador para rastrear el tiempo de la manifestacion
     private bool isManifested = false; //Indica si la manifestacion esta ocurriendo o no
 
@@ -31,7 +31,7 @@ public class BWManifestationStatus : MonoBehaviour
             
             if(BWInstance == null)
             {
-                BWInstance = GameObject.Find("BlackWidow"); //Si BWInstance es nulo, busca el objeto de BlackWidow en la escena y la coloca
+                BWInstance = GameObject.Find("BlackWidow-M"); //Si BWInstance es nulo, busca el objeto de BlackWidow en la escena y la coloca
             }
             
             if(BWInstance != null)
