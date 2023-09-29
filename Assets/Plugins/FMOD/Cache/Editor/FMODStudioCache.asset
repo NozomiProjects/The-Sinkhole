@@ -60,6 +60,7 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: -7488691765485357711}
   StringsBanks:
+
   - {fileID: -8769303642733264532}
   cacheTime: 638315401026018580
   cacheVersion: 131605
