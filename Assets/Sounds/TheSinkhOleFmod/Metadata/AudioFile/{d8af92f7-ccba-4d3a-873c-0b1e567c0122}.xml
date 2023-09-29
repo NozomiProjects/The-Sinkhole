@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d8af92f7-ccba-4d3a-873c-0b1e567c0122}">
+		<property name="assetPath">
+			<value>nigthForest.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>45.095999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2be89954-7115-4b64-b218-2388f64a39f4}</destination>
+		</relationship>
+	</object>
+</objects>

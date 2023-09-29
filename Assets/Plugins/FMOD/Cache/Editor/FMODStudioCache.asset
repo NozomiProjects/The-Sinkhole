@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8852823250695356668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ambient
+  m_EditorClassIdentifier: 
+  Path: event:/ambient
+  Guid:
+    Data1: -69957289
+    Data2: 1076939881
+    Data3: 1909062579
+    Data4: -1615386433
+  Banks:
+  - {fileID: -2909293396647372852}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 45096
+--- !u!114 &-7749062483788202975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bwScream
+  m_EditorClassIdentifier: 
+  Path: event:/bwScream
+  Guid:
+    Data1: -111709738
+    Data2: 1077283530
+    Data3: 1326594976
+    Data4: -174924665
+  Banks:
+  - {fileID: -2909293396647372852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4500
 --- !u!114 &-6591040249345738619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,7 +103,7 @@ MonoBehaviour:
   - {fileID: -2909293396647372852}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -69,10 +123,10 @@ MonoBehaviour:
   Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638316071033310262
+  lastModified: 638316113177175031
   FileSizes:
   - Name: Desktop
-    Value: 1616576
+    Value: 2115552
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -94,12 +148,14 @@ MonoBehaviour:
   - {fileID: 1080167582191777121}
   - {fileID: -4691574372140963870}
   - {fileID: -6591040249345738619}
+  - {fileID: -7749062483788202975}
+  - {fileID: -8852823250695356668}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2909293396647372852}
   StringsBanks:
   - {fileID: 7268538553746899785}
-  cacheTime: 638316071033330204
+  cacheTime: 638316113177204953
   cacheVersion: 131605
 --- !u!114 &1080167582191777121
 MonoBehaviour:
@@ -170,8 +226,8 @@ MonoBehaviour:
   Path: Assets/Sounds/TheSinkhOleFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638316071033330204
+  lastModified: 638316113177204953
   FileSizes:
   - Name: Desktop
-    Value: 900
+    Value: 976
   Exists: 1

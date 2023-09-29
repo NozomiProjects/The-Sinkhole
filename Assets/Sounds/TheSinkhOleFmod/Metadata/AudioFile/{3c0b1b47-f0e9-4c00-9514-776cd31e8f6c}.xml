@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3c0b1b47-f0e9-4c00-9514-776cd31e8f6c}">
+		<property name="assetPath">
+			<value>sfxLaViudaSoundVoice04.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.204716553287982</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2be89954-7115-4b64-b218-2388f64a39f4}</destination>
+		</relationship>
+	</object>
+</objects>
