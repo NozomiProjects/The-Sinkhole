@@ -21,4 +21,15 @@ public class EnemyAnimator : MonoBehaviour
         // Detiene la anim
         animator.ResetTrigger("seduction"); // Resetear el trigger o configurar como desees
     } */
+    public void StartScreamAnimation()
+    {
+        // Inicia la anim "scream" 
+        animator.SetBool("IsScreaming", true);
+    }
+
+    public void StopScreamAnimation()
+    {
+        // Detiene la anim "scream"
+        animator.SetBool("IsScreaming", false);
+    }
 }

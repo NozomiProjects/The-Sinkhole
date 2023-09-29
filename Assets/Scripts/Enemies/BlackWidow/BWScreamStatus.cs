@@ -7,10 +7,16 @@ public class BWScreamStatus : MonoBehaviour
     //cuando el personaje esta a una distancia de 10f 
     //la bruja corre hacia el por 2 segundos y desaparece
     public Transform player;
-    public float startMoveDistance = 10.0f;
-    public float moveSpeed = 18.0f;
-    public float moveDuration = 0.3f;
+    public float startMoveDistance = 30.0f;
+    public float moveSpeed = 35.0f;
+    public float moveDuration = 0.8f;
 
+    private EnemyAnimator enemyAnimator;
+
+    private void Start()
+    {
+        enemyAnimator = GetComponent<EnemyAnimator>();
+    }
     private void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
@@ -22,7 +28,8 @@ public class BWScreamStatus : MonoBehaviour
     }
 
     private IEnumerator MoveAndDisappear()
-{
+{   
+    enemyAnimator.StartScreamAnimation();
     // Guarda la pos inicial de la bruja
     Vector3 initialPosition = transform.position;
 
