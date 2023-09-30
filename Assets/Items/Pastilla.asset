@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   itemName: Pastilla
-  prefab: {fileID: 0}
+  prefab: {fileID: 4373046780425368578, guid: 0cfee2e1eb141f545bc40eb8b387c9c0, type: 3}
   icon: {fileID: 2800000, guid: d03c3cff04edbd240b5e2791957b24b5, type: 3}
   maxStack: 1

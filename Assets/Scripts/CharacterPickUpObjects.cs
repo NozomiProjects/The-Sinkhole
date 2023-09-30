@@ -11,8 +11,8 @@ public class CharacterPickUpObjects : MonoBehaviour
     public Vector3 originalScale;
     public bool grabbedObject = false;
     public float throwingForce = 5;
-    public float maxThrowingForce = 20;
-    public float forceIncreaseSpeed = 5;
+    public float maxThrowingForce = 40;
+    public float forceIncreaseSpeed = 8;
     public bool isChargingThrow = false;
 
     private void Start()
